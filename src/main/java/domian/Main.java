@@ -10,7 +10,6 @@ public class Main {
         EntityManager entityManager = entityManagerFactory.createEntityManager() ;
 
         Employee employee = new Employee();
-        employee.setId(1L);
         employee.setFirstname("fsadasf");
         employee.setLastname("fadsfas");
         employee.setSalary(121);

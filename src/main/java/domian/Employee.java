@@ -1,17 +1,23 @@
 package domian;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "pracownicy")
 public class Employee {
-    private long id;
-    private String firstname;
-    private String lastname;
-    private  double salary;
-
     @Id
+    @GeneratedValue
+    private long id;
+    @Column(name = "imie",nullable = false, length = 20)
+    private String firstname;
+    @Column(name = "nazwisko", columnDefinition = "VARCHAR(10) NOT NULL")
+    private String lastname;
+    @Column(name = "pensja")
+    private  double salary;
+    @Column(precision = 10, scale = 2)
+    private  double salary2;
+
     public long getId() {
         return id;
     }
