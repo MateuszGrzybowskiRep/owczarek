@@ -12,6 +12,8 @@ public class Employee {
     private  double salary;
     private  double salary2;
     private  double salary2;
+    private  double salary2;
+
 
 
 
