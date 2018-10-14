@@ -11,6 +11,8 @@ public class Employee {
     private String lastname;
     private  double salary;
     private  double salary2;
+    private  double salary2;
+
 
 
     @Id
